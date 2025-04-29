@@ -5,8 +5,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 # Load from Hugging Face Hub
 MODEL_NAME = "xerces101/eng2nag"
 
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
+tokenizer = AutoTokenizer.from_pretrained(eng2nag)
+model = AutoModelForSeq2SeqLM.from_pretrained(eng2nag)
 
 app = FastAPI()
 
